@@ -39,8 +39,9 @@
     </header>
 
     <main class="main-inner">
-      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
       <section class="hotel-search">
+        <h1 class="page-title">Гостиницы Седоны</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
@@ -54,7 +55,7 @@
         <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
         <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="infrastructure-filter-group">
-            <legend class="infrastructure-filter-title">Инфраструктура:</legend>
+            <legend class="filter-title">Инфраструктура:</legend>
             <ul class="infrastructure-filter-list">
               <li class="infrastructure-filter-item">
                 <label class="control">
@@ -78,7 +79,7 @@
           </fieldset>
 
           <fieldset class="hotel-filter-group">
-            <legend class="hotel-filter-title">Тип жилья:</legend>
+            <legend class="filter-title">Тип жилья:</legend>
             <ul class="housing-filter-list">
               <li class="housing-filter-item">
                 <label class="control">
@@ -106,7 +107,7 @@
           </fieldset>
             -->
           <div class="filter-buttons">
-            <button class="button" type="submit">Применить</button>
+            <button class="button button-apply" type="submit">Применить</button>
             <a class="button reset" href="#">
               <span class="button reset">Сбросить</span>
             </a>
@@ -140,13 +141,13 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="images/catalog/catalog-hotel-1.jpg" alt="Изображение Amara Resort & Spa" width="299" height="206">
-              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             </a>
+            <h3 class="hotel-card-title">Amara Resort & Spa</h3>
             <span class="hotel-type">Гостиница</span>
             <span class="start-price">От 4000 ₽</span>
             <div class="buttons">
-              <a class="hotel-card-button button" href="#">Подробнее</a>
-              <input class="button favorites" type="submit" value="В избранное">
+              <a class="hotel-card-button catalog-button" href="#">Подробнее</a>
+              <input class="catalog-button favorites" type="submit" value="В избранное">
             </div>
             <div class="rating">
               <img class="stars" src="#" alt="4 звезды">
@@ -157,13 +158,13 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/catalog/catalog-hotel-2.jpg" alt="Изображение Desert Quail Inn" width="299" height="206">
-              <h3 class="hotel-card-title">Desert Quail Inn</h3>
             </a>
+            <h3 class="hotel-card-title">Desert Quail Inn</h3>
             <span class="hotel-type">Гостиница</span>
             <span class="start-price">От 3500 ₽</span>
             <div class="buttons">
-              <a class="hotel-card-button button" href="#">Подробнее</a>
-              <input class="button favorites" type="submit" value="В избранное">
+              <a class="hotel-card-button catalog-button" href="#">Подробнее</a>
+              <input class="catalog-button favorites" type="submit" value="В избранное">
             </div>
             <div class="rating">
               <img class="stars" src="#" alt="3 звезды">
@@ -174,13 +175,13 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/catalog/catalog-hotel-3.jpg" alt="Изображение Villas at Poco Diablo" width="299" height="206">
-              <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
+            <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             <span class="hotel-type">Гостиница</span>
             <span class="start-price">От 2000 ₽</span>
             <div class="buttons">
-              <a class="hotel-card-button button" href="#">Подробнее</a>
-              <input class="button favorites pushed" type="submit" value="В избранном">
+              <a class="hotel-card-button catalog-button" href="#">Подробнее</a>
+              <input class="catalog-button favorites pushed" type="submit" value="В избранном">
             </div>
             <div class="rating">
               <img class="stars" src="#" alt="2 звезды">
@@ -191,13 +192,13 @@
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
               <img class="hotel-card-image" src="images/catalog/catalog-hotel-4.jpg" alt="Изображение GreenTree Inn" width="299" height="206">
-              <h3 class="hotel-card-title">GreenTree Inn</h3>
             </a>
+            <h3 class="hotel-card-title">GreenTree Inn</h3>
             <span class="hotel-type">Гостиница</span>
             <span class="start-price">От 3000 ₽</span>
             <div class="buttons">
-              <a class="hotel-card-button button" href="#">Подробнее</a>
-              <input class="button favorites" type="submit" value="В избранное">
+              <a class="hotel-card-button catalog-button" href="#">Подробнее</a>
+              <input class="catalog-button favorites" type="submit" value="В избранное">
             </div>
             <div class="rating">
               <img class="stars" src="#" alt="2 звезды">
@@ -240,7 +241,7 @@
         </form>
       </section>
 
-      <section class="subscribe">
+      <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="helpful-info">Только полезная информация и никакого спама,<br>
           честное бойскаутское!</p>
@@ -253,7 +254,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="page-footer">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
@@ -272,9 +273,9 @@
           </a>
         </li>
       </ul>
-      <p><a class="footer-contacts-address-phone" href="tel:+78121212">+7 (812)) 812-12-12</a></p>
+      <p><a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a></p>
       <h2 class="visually-hidden">HTML-Academy</h2>
-      <a class="html-academy" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="#"></a>
+      <a class="html-academy" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="images/logo-html-academy.svg" width="115" height="34" alt="Логотип HTML Academy"></a>
     </footer>
   </body>
 </html>
