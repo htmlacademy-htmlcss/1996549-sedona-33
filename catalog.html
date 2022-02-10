@@ -116,7 +116,7 @@
         </section>
         <section class="search-results">
           <div class="search-results-container">
-            <p class="overall-result">Найдено гостиниц: 38</p>
+            <p class="overall-results">Найдено гостиниц: 38</p>
             <form class="sorting-type">
               <label class="visually-hidden">Сортировка</label>
               <select class="select-control" aria-label="Сортировка">
@@ -126,7 +126,7 @@
               </select>
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
-            <div class="overall-result">
+            <div class="overall-result overall-result-button">
               <a class="button checked" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
@@ -211,36 +211,37 @@
             <div class="show-more">
               <button class="button show-more" type="button">Загрузить ещё</button>
             </div>
-
-            <ul class="pagination-list">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current" href="#">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <form class="number-of-hotels">
-              <label class="number-of-hotels-title">Гостиниц на странице:</label>
-              <select class="select-control-number">
-                <option class="pushed" value="four">4</option>
-                <option value="eight">8</option>
-                <option value="twelve">12</option>
-              </select>
-              <button class="visually-hidden" type="submit">Показать количество</button>
-            </form>
+            <div class="pagination-conteiner">
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
+              <form class="number-of-hotels">
+                <label class="number-of-hotels-title">Гостиниц на странице:</label>
+                <select class="select-control-number">
+                  <option class="pushed" value="four">4</option>
+                  <option value="eight">8</option>
+                  <option value="twelve">12</option>
+                </select>
+                <button class="visually-hidden" type="submit">Показать количество</button>
+              </form>
+            </div>
           </div>
         </section>
 
@@ -260,7 +261,7 @@
 
     <footer class="page-footer">
       <div class="page-footer-container">
-        <!-- <h2 class="visually-hidden">Мы в социальных сетях</h2> -->
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-button" href="https://twitter.com/htmlacademy_ru">
@@ -278,8 +279,8 @@
             </a>
           </li>
         </ul>
-        <p><a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a></p>
-        <!-- <h2 class="visually-hidden">HTML-Academy</h2> -->
+        <p class="contacts-phone"><a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a></p>
+        <h2 class="visually-hidden">HTML-Academy</h2>
         <a class="html-academy" href="https://htmlacademy.ru/"><img class="logo-html-academy" src="images/logo-html-academy.svg" width="115" height="34" alt="Логотип HTML Academy"></a>
       </div>
     </footer>
