@@ -607,19 +607,66 @@ body {
   margin-right: 8px;
 }
 
+.overall-result .button:nth-child(2),
+.overall-result .button:nth-child(3) {
+  margin-left: 0;
+}
+
 .hotels-list {
-  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 339px);
+  gap: 10px;
+  margin: 53px 74px 34px 70px;
   padding: 0;
   list-style-type: none;
 }
 
-.hotel-card-title {
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+}
 
+.hotel-card-image {
+  margin: 20px 20px 16px 20px;
+}
+
+.hotel-card-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 0;
+  flex-grow: 1;
+}
+
+.span-content {
+  display: block;
+  width: 141px;
+  margin-bottom: 16px
+}
+
+.span-hotel {
+  width: 133px;
+  margin-right: 25px;
+  margin-bottom: 16px
+}
+
+.hotel-card-button {
+  margin-right: 25px;
+}
+
+.rating {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.hotel-card-title {
   color: #000000;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
   text-decoration: none;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .catalog-button {
