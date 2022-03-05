@@ -54,54 +54,86 @@
               </li>
             </ul>
           </div>
-          <!-- <h2 class="visually-hidden">Фильтр поиска гостиницы</h2> -->
+          <h2 class="visually-hidden">Фильтр поиска гостиницы</h2>
+
           <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="infrastructure-filter-group">
+            <fieldset class="infrastructure-filter-group filter-group">
               <legend class="filter-title">Инфраструктура:</legend>
               <ul class="infrastructure-filter-list filter-list">
-                <li class="infrastructure-filter-item">
+                <li class="infrastructure-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
-                        Бассейн
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
                   </label>
                 </li>
-                <li class="infrastructure-filter-item">
+                <li class="infrastructure-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Парковка</span>
                   </label>
                 </li>
-                <li class="infrastructure-filter-item">
+                <li class="infrastructure-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
-                      Wi-Fi
+                    <input class=" visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="hotel-filter-group">
+            <fieldset class="hotel-filter-group filter-group">
               <legend class="filter-title">Тип жилья:</legend>
               <ul class="housing-filter-list filter-list">
-                <li class="housing-filter-item">
+                <li class="housing-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group" checked>
-                      Гостиница
+                    <input class="visually-hidden control-input" type="radio" name="housing-group" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
-                <li class="housing-filter-item">
+                <li class="housing-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group">
-                      Мотель
+                    <input class="visually-hidden control-input" type="radio" name="housing-group">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
-                <li class="housing-filter-item">
+                <li class="housing-filter-item filter-list-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="housing-group">
-                      Апартаменты
+                    <input class="visually-hidden control-input" type="radio" name="housing-group">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
+            </fieldset>
+
+            <fieldset class="price-filter-group filter-group">
+              <legend class="filter-title filter-title-range">Стоимость, ₽:</legend>
+
+              <div class="range-wrapper-inputs">
+                <label class="price-filter-label">
+                  <input class="range-input range-input-min" type="number" value="0" name="min-price"> <span class="min">от</span>
+                  <input class="range-input range-input-max" type="number" value="9000" name="max-price"> <span class="max">до</span>
+                </label>
+              </div>
+
+
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0px; width: 227px">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
+
             </fieldset>
 
             <div class="filter-buttons">
@@ -115,7 +147,7 @@
             <p class="overall-results">Найдено гостиниц: 38</p>
             <form class="sorting-type">
               <label class="visually-hidden">Сортировка</label>
-              <select class="select-control" aria-label="Сортировка">
+              <select class="select-control select" aria-label="Сортировка">
                 <option class="pushed" value="cheap">Сначала дешёвые</option>
                 <option value="popular">Сначала популярные</option>
                 <option value="expensive">Сначала дорогие</option>
@@ -253,7 +285,7 @@
               </ul>
               <form class="number-of-hotels">
                 <label class="number-of-hotels-title">Гостиниц на странице:</label>
-                <select class="select-control-number">
+                <select class="select-control-number select">
                   <option class="pushed" value="four">4</option>
                   <option value="eight">8</option>
                   <option value="twelve">12</option>
