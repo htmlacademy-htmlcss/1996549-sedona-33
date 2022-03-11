@@ -46,11 +46,11 @@
           <h1 class="page-title">Гостиницы Седоны</h1>
           <div class="breadcrumbs">
             <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-item breadcrumbs-item-main">
-                <a class="breadcrumbs-link breadcrumbs-link-main" href="index.html"><svg class="svg-main" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 .300049 0 5.80005V12h12V5.80005L6 .300049ZM11 11H1V6.20005l5-4.5 5 4.5V11Z" fill="evenodd" clip-rule="evenodd"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html"><svg class="svg-main" width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg"><path d="M6 .300049 0 5.80005V12h12V5.80005L6 .300049ZM11 11H1V6.20005l5-4.5 5 4.5V11Z" fill="evenodd" clip-rule="evenodd"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-hotels" href="#">Гостиницы</a>
+                <a class="breadcrumbs-link" href="#">Гостиницы</a>
               </li>
             </ul>
           </div>
@@ -59,22 +59,22 @@
           <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="infrastructure-filter-group filter-group">
               <legend class="filter-title">Инфраструктура:</legend>
-              <ul class="infrastructure-filter-list filter-list">
-                <li class="infrastructure-filter-item filter-list-item">
+              <ul class="filter-list">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
-                <li class="infrastructure-filter-item filter-list-item">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
-                <li class="infrastructure-filter-item filter-list-item">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class=" visually-hidden control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-mark"></span>
@@ -86,22 +86,22 @@
 
             <fieldset class="hotel-filter-group filter-group">
               <legend class="filter-title">Тип жилья:</legend>
-              <ul class="housing-filter-list filter-list">
-                <li class="housing-filter-item filter-list-item">
+              <ul class="filter-list">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="housing-group" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
-                <li class="housing-filter-item filter-list-item">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="housing-group">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
-                <li class="housing-filter-item filter-list-item">
+                <li class="filter-list-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="housing-group">
                     <span class="control-mark"></span>
@@ -117,23 +117,24 @@
               <div class="range-wrapper-inputs">
                 <label class="price-filter-label">
                   <input class="range-input range-input-min" type="number" value="0" name="min-price"> <span class="min">от</span>
+                </label>
+                <label class="price-filter-label">
                   <input class="range-input range-input-max" type="number" value="9000" name="max-price"> <span class="max">до</span>
                 </label>
               </div>
 
-
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0px; width: 227px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
                 </div>
-
+              </div>
             </fieldset>
 
             <div class="filter-buttons">
@@ -154,16 +155,16 @@
               </select>
               <button class="visually-hidden" type="submit">Отсортировать продукты</button>
             </form>
-            <div class="overall-result overall-result-button">
-              <a class="card-grid-toggle card-grid-toggle-1" type="button" href="#">
+            <div class="overall-result-button">
+              <button class="card-grid-toggle card-grid-toggle-1" type="button">
                 <span class="visually-hidden">Показать карточки</span>
-              </a>
-              <a class="card-grid-toggle card-grid-toggle-2" type="button" href="#">
+              </button>
+              <button class="card-grid-toggle card-grid-toggle-2" type="button">
                 <span class="visually-hidden">Показать карточки с описанием</span>
-              </a>
-              <a class="card-grid-toggle card-grid-toggle-3" type="button" href="#">
+              </button>
+              <button class="card-grid-toggle card-grid-toggle-3" type="button">
                 <span class="visually-hidden">Показать список</span>
-              </a>
+              </button>
             </div>
           </div>
           <div class="catalog-column">
@@ -199,7 +200,7 @@
                 <div class="hotel-card-content">
                   <h3 class="hotel-card-title">Desert Quail Inn</h3>
                   <span class="hotel-type span-content span-hotel">Гостиница</span>
-                  <span class="start-price span-content">От 3500 ₽</span>
+                  <span class="start-price span-content">От 3000 ₽</span>
                   <div class="buttons card-buttons">
                     <a class="hotel-card-button catalog-button" href="#">Подробнее</a>
                     <input class="catalog-button favorites" type="submit" value="В избранное">
@@ -259,7 +260,7 @@
                 </div>
               </li>
             </ul>
-            <div class="show-more show-button">
+            <div class="show-button">
               <button class="button show-more-button" type="button">Загрузить ещё</button>
             </div>
             <div class="pagination-conteiner">
@@ -297,7 +298,7 @@
         </section>
 
         <section class="subscribe-catalog">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <h2 class="subscribe-title subscribe-title-catalog">Подпишитесь на рассылку</h2>
           <p class="helpful-info">Только полезная информация и никакого спама,<br>
             честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
