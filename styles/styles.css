@@ -268,7 +268,6 @@ body {
 
 .reason-container {
   display: flex;
-  position: relative;
 }
 
 .reason-container::after {
@@ -278,6 +277,10 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.reason-container-2 {
+  display: flex;
 }
 
 .reason-container-2::before {
@@ -586,7 +589,7 @@ body {
 
 .helpful-info {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 
 .field {
@@ -608,7 +611,6 @@ body {
   background-color: #ffffff;
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .social-button {
@@ -618,6 +620,14 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.footer-social-link-tw {
+  margin-bottom: 2px;
+}
+
+.footer-social-link-yt {
+  margin-bottom: 1px;
 }
 
 .footer-contacts-phone {
@@ -650,7 +660,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 22px 0;
+  padding: 21px 0;
 }
 
 .footer-social-list {
@@ -852,11 +862,11 @@ body {
 }
 
 .modal-form .field:focus {
-  background-color: #E6E6E6;
+  background-color: #ffffff;
   outline: 3px solid #83B3D3;
 }
 
-.modal-form .field:active:focus {
+.modal-form .field:active {
   background-color: #ffffff;
 }
 
@@ -1400,7 +1410,7 @@ body {
 
 .button-apply:active {
   background-color: #68A2CA;
-  color: rgba(255, 255, 255, 0.3));
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset {
