@@ -73,6 +73,7 @@ body {
   left: -169px;
   margin: 0;
   margin-right: 30px;
+  z-index: 1;
 }
 
 .logo {
