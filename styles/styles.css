@@ -16,7 +16,6 @@
 
 html {
   height: 100%;
-
 }
 
 body {
@@ -30,6 +29,11 @@ body {
   color: #333333;
   min-width: 1280px;
   background-color: #f2f2f2;
+}
+
+.shadow {
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);;
 }
 
 .visually-hidden {
@@ -99,8 +103,7 @@ body {
   content: ""
 }
 
-.navigation-link-favorite::before {
-  content: "12";
+.favorite-value {
   color: #ffffff;
   vertical-align: middle;
   font-family: "PT Sans", sans-serif;
@@ -124,7 +127,6 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
-
 }
 
 .navigation-link-favorite {
@@ -172,7 +174,7 @@ body {
   min-height: 20px;
   margin-top: 14px;
   margin-bottom: 14px;
-  padding: 8px 35px;
+  padding: 9px 35px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -213,19 +215,27 @@ body {
 }
 
 .welcome-image {
+  position: relative;
   background-color: #6C48D7;
   background-image: url("../images/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-
   display: flex;
   flex-wrap: wrap;
   padding-top: 51px;
+  padding-bottom: 82px;
   margin-top: -5px;
 }
 
-.mask {
-  margin-top: 25px;
+.welcome-image::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/index-background-mask.svg");
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 57px;
+  left: 0;
+  bottom: 0;
 }
 
 .greeting {
@@ -240,7 +250,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-bottom: 31px;
+  margin-bottom: 32px;
 }
 
 .sedona-reasons {
@@ -298,7 +308,7 @@ body {
 
 .items3-5-list {
   display: flex;
-  }
+}
 
 .five-reasons {
   font-size: 22px;
@@ -313,7 +323,6 @@ body {
   background-color: #83B3D3;
   color: #ffffff;
   text-align: center;
-
 }
 
 .reason-title {
@@ -444,7 +453,6 @@ body {
   padding-top: 91px;
   padding-bottom: 93px;
   background-color: #ffffff;
-
 }
 
 .appointment-question {
@@ -454,7 +462,6 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-
   display: block;
   margin-bottom: 29px;
 }
@@ -506,7 +513,6 @@ body {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
   color: #ffffff;
   font-size: 22px;
   line-height: 26px;
@@ -554,7 +560,6 @@ body {
   outline: none;
   padding-left: 22px;
   box-sizing: border-box;
-
 }
 
 .subscribe-button {
@@ -628,6 +633,7 @@ body {
 
 .footer-social-link-yt {
   margin-bottom: 1px;
+  margin-right: 2px;
 }
 
 .footer-contacts-phone {
@@ -638,7 +644,8 @@ body {
   color: #000000;
   text-decoration: none;
   display: block;
-  margin-left: -12px;
+  margin-left: 7px;
+  padding: 12px;
 }
 
 .footer-contacts-phone:hover {
@@ -648,6 +655,7 @@ body {
 .footer-contacts-phone:focus {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+  color: #756257;
 }
 
 .footer-contacts-phone:active {
@@ -655,52 +663,55 @@ body {
   outline: none;
 }
 
-
 .page-footer-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 21px 0;
+  padding: 9px 0;
 }
 
 .footer-social-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  max-width: 250px;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 72px;
+  margin-left: 64px;
   justify-content: space-between;
 }
 
 .footer-social-item {
-  margin-right: 20px;
+  margin-right: 9px;
   align-self: center;
+}
+
+.footer-social-link-fb {
+  margin-right: 2px;
 }
 
 .social-button {
   display: inline-block;
 }
 
-.fb-icon {
-  padding: 0 10px;
-}
-
 .tw-icon {
   fill: #83B3D3;
   display: block;
+  padding: 9px 8px;
 }
 
 .fb-icon {
   fill: #83B3D3;
   display: block;
   margin: 0 auto;
+  padding: 8px 12px;
 }
 
 .yt-icon {
   fill: #83B3D3;
   display: block;
   margin-left: auto;
+  padding: 9px 7px;
 }
 
 .social-icon:hover {
@@ -720,12 +731,13 @@ body {
 
 .html-academy {
   display: block;
-  margin-right: 72px;
+  margin-right: 51px;
 }
 
 .html-academy:focus {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+  fill: #756257;
 }
 
 .logo-html-academy:hover {
@@ -736,6 +748,10 @@ body {
   fill: #756257;
   opacity: 0.3;
   outline: none;
+}
+
+.logo-html-academy {
+  padding: 15px 19px;
 }
 
 .modal-container {
@@ -756,14 +772,15 @@ body {
 
 .modal-search {
   width: 715px;
+  height: 561px;
   border-radius: 30px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 54px;
-  right: 70px;
+  top: 35px;
+  right: 97px;
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -798,7 +815,7 @@ body {
 
 .modal-title {
   margin: 0;
-  padding: 62px 148px 64px 68px;
+  padding: 44px 50px 41px 40px;
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 40px;
@@ -822,14 +839,16 @@ body {
 
 .field-group {
   display: flex;
-  margin: 0 70px;
+  margin-right: 97px;
+  margin-left: 42px;
   justify-content: space-between;
 }
 
 .sign {
   display: block;
-  margin: 0 70px;
-  margin-bottom: 11px;
+  margin-left: 198px;
+  margin-top: -17px;
+  margin-bottom: -7px;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 28px;
@@ -838,6 +857,10 @@ body {
 
 .check-in-sign {
   color: #ff5757;
+}
+
+.check-out-sign {
+  margin-bottom: 12px;
 }
 
 .modal-form .field {
@@ -852,7 +875,6 @@ body {
 .field-check {
   background-image: url("../images/calendar.svg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: 15px 15px;
   background-position: 386px center;
 }
@@ -876,9 +898,10 @@ body {
 
 .guest-container {
   display: flex;
-  margin: 0 70px 40px;
+  margin-right: 98px;
+  margin-left: 42px;
+  margin-bottom: 39px;
   justify-content: space-between;
-
 }
 
 .guest {
@@ -913,6 +936,7 @@ body {
 .button-guest {
   width: 44px;
   border: none;
+  background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-size: 28px;
   line-height: 40px;
@@ -955,10 +979,11 @@ body {
   line-height: 20px;
   font-weight: normal;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 21px 18px 18px 22px;
   border-radius: 8px;
   display: block;
-  width: 256px;
+  height: 105px;
+  width: 216px;
   position: absolute;
   top: 100%;
   margin-top: 15px;
@@ -975,7 +1000,8 @@ body {
 
 .form-label-icon {
   position: relative;
-  padding-right: 20px;
+  padding-right: 56px;
+  margin-top: -1px;
 }
 
 .tooltip-text:after {
@@ -983,10 +1009,10 @@ body {
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1001,7 +1027,7 @@ body {
 
 .button-guest:active {
   outline: none;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .button-minus {
@@ -1015,11 +1041,13 @@ body {
 .modal-submit {
   min-width: 575px;
   min-height: 60px;
-  margin: 0 70px 70px;
-  border: none;
+  margin-right: 98px;
+  margin-left: 43px;
+  margin-bottom: 90px;
   background-color: #83B3D3;
   width: 44px;
   border: none;
+  border-radius: 10px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 40px;
@@ -1261,12 +1289,12 @@ body {
 
 .toggle-min {
   top: -8px;
-  left: -2px;
+  left: 0px;
 }
 
 .toggle-max {
   top: -8px;
-  right: -6px;
+  right: -10px;
 }
 
 .range-toggle:hover {
@@ -1390,7 +1418,7 @@ body {
   padding: 13px 35px;
   border: none;
   border-radius: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -1415,12 +1443,15 @@ body {
 
 .reset {
   font-family: "PT Sans", sans-serif;
+  background-color: transparent;
   font-size: 18px;
-  line-height: 23px;
+  border: none;
+  line-height: 20px;
+  padding: 5px 10px;
   color: #ffffff;
   text-decoration: none;
   display: block;
-  text-align: center;
+  margin-left: 31px;
 }
 
 .reset:hover {
@@ -1429,7 +1460,6 @@ body {
 
 .reset:focus {
   outline: 3px solid #83B3D3;
-
 }
 
 .reset:active {
@@ -1466,6 +1496,10 @@ body {
 .overall-result-button {
   display: flex;
   flex-wrap: wrap;
+}
+
+.select {
+  background-color: #ffffff;
 }
 
 .select-control {
@@ -1543,7 +1577,7 @@ body {
 .hotels-list {
   display: grid;
   grid-template-columns: repeat(3, 339px);
-  gap: 7px 18px;
+  gap: 9px 19px;
   margin: 53px 0 34px;
   padding: 0;
   list-style-type: none;
@@ -1587,13 +1621,13 @@ body {
 .span-content {
   display: block;
   width: 141px;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .span-hotel {
   width: 133px;
   margin-right: 25px;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .card-buttons {
@@ -1618,6 +1652,7 @@ body {
 
 .star {
   margin-right: 7px;
+  margin-top: 4px;
 }
 
 .hotel-card-title {
@@ -1662,25 +1697,32 @@ body {
 }
 
 .favorites {
-  background-color: #83B3D3;
-  width: 140px;
-  padding: 9px 0 10px;
+  padding: 9px 21px;
   border: none;
   display: inline-block;
+  background-color: #83B3D3;
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   border-radius: 4px;
  }
 
- .favorites:focus {
-   outline: 3px solid #756257;
-   background-color: #68A2CA;
+.favorites:focus {
+  outline: 3px solid #756257;
+  background-color: #68A2CA;
  }
 
- .favorites:hover {
+.favorites:hover {
   background-color: #68A2CA;
   box-shadow: inset 1px 1px 0 0 #756257, inset -1px -1px 0 0 #756257;
  }
 
- .favorites:active {
+.favorites:active {
   background-color: #68A2CA;
   box-shadow: inset 1px 1px 0 0 #756257, inset -1px -1px 0 0 #756257;
   color: rgba(255, 255, 255, 0.3);
@@ -1689,6 +1731,7 @@ body {
 
 .pushed {
   background-color: #7DB54F;
+  padding: 9px 18px;
 }
 
 .pushed:focus {
@@ -1707,9 +1750,11 @@ body {
 }
 
 .rating-result {
+  margin: 0;
   background-color: #f2f2f2;
   width: 160px;
   font-family: "PT Sans", sans-serif;
+  color: #333333;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -1753,15 +1798,15 @@ body {
 
 .show-button {
   text-align: center;
-  padding: 31px 0;
+  padding: 29px 0;
   border-top: 1px solid #E6E6E6;;
   border-bottom: 1px solid #E6E6E6;;
 }
 
 .pagination-conteiner {
   display: flex;
-  padding-top: 26px;
-  padding-bottom: 72px;
+  padding-top: 29px;
+  padding-bottom: 69px;
 }
 
 .pagination-list {
@@ -1813,7 +1858,6 @@ body {
 
 .pagination-current {
   background-color: #f2f2f2;
-
   color: #000000;
 }
 
@@ -1858,7 +1902,6 @@ body {
 
 .subscribe-catalog {
   background-color: #ffffff;
-
   color: #000000;
   font-size: 22px;
   line-height: 26px;
