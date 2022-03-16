@@ -112,7 +112,7 @@ body {
   line-height: 20px;
   background-color: #7DB54F;
   display: inline-block;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   position: absolute;
   border-radius: 50%;
